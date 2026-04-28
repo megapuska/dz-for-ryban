@@ -10,5 +10,5 @@ def positive_args(func):
 def rectangle_area(a, b):
     return a * b
 
-rectangle_area(5, 3)
-rectangle_area(5, -2)
+rectangle_area(5, 3) # OK
+rectangle_area(5, -2) # Аргументы должны быть положительными

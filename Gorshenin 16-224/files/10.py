@@ -1,0 +1,20 @@
+name = input("Введите свое имя: ")
+description = input("Опишите себя: ")
+
+f = open("webpage.html", "w")
+
+f.write("<html>\n")
+f.write("<head>\n")
+f.write("</head>\n")
+f.write("<body>\n")
+f.write("    <center>\n")
+f.write("    <h1>" + name + "</h1>\n")
+f.write("    </center>\n")
+f.write("    <hr />\n")
+f.write("    " + description + "\n")
+f.write("    <hr />\n")
+f.write("</body>\n")
+f.write("</html>\n")
+
+f.close()
+print("Веб-страница сохранена в файл webpage.html")
